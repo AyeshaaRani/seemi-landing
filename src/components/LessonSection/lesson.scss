@@ -12,8 +12,8 @@
   
   .square-icon {
     position: relative;
-    top: 350px;          
-    right: -900px;         
+    top: 400px;          
+    right: -800px;         
     width: 100px;
     z-index: 1;
   }
@@ -87,7 +87,7 @@
   margin-bottom: 10px;
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1200px) {
 
   .lesson-section{
 
@@ -102,8 +102,8 @@
     }
 
     .square-icon{
-      right: -430px;
-      top: 350px;
+      right: -340px;
+      top: 450px;
       width: 80px;
     }
 
