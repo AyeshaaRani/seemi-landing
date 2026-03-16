@@ -715,24 +715,86 @@ left: 400px;
 
 }
   
-  @media (max-width: 480px) {
-  
-    .integration-card h3 {
-      font-size: 20px;
+  @media (max-width: 480px){
+.integration-card{
+  max-width: 260px;
+}
+    /* Floating cards centered inside card */
+    .floating-card,
+    .rotate-1,
+    .rotate-2,
+    .rotate-3 , .feedback{
+      left: 50% !important;
+      transform: translateX(-50%) rotate(0deg) !important; /* remove rotations if they break layout */
+      max-width:220px ;
     }
   
-    .integration-card p {
-      font-size: 13px;
-    }
-  
-    .floating-card {
-      width: 220px;
-    }
-  
-    .team-card,
+    /* Team / Member / Feedback Cards centered */
+    
     .member-card,
     .feedback-card {
-      width: 220px;
+      left: 10% !important;
+      right: auto !important;
+     top: 60%;
+     width: 100%;
+     margin-left: 0px;
+
     }
+    .team-card{
+      width: 100%;
+      left: 10%;
+      .expand-icon{
+        top: 3px;
+        right: 2px;
+        width: 29px;
+        height: 29px;
+      }
+    }
+    .member-card p{
+      font-size: 10px;
+    }
+   
+  
+    /* Calendar badges centered */
+    .calendar-badges {
+      right: 20% !important;
+      top: -50px;
+      transform: translateX(50%) rotate(0deg);
+      width: 80px;
+    
+    }
+  
+    /* Seemii tag */
+    .seemii-tag {
+     display: none;
+    }
+  
+    /* Add tutor box */
+    .add-tutor {
+      width: 220px;
+      left: 50% !important;
+      transform: translateX(-50%);
+    }
+   .email{
+    width: 105%;
+    margin: 1px;
+    
+
+    span{
+      display: none;
+    }
+   }
+   .sparkle, .team, .vector1, .vector2, .arrow, .arrow2{
+    display: none;
+  
+      
+  }
+  .team{
+    position: absolute;
+  top: 130px;
+  right: 20px;
+  }
+ 
+  
   
   }
