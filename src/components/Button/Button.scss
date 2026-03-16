@@ -1,0 +1,15 @@
+.custom-button {
+    padding: 12px 30px;
+    border-radius: 40px;
+    border: none;
+    cursor: pointer;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    transition: all 0.3s ease;
+  
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+  

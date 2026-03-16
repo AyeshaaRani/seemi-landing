@@ -1,0 +1,8 @@
+.ellipse{
+    position: absolute;
+    border-radius: 50%;
+    border: 3px dotted;
+    background: transparent;  
+    /* z-index: 1; */
+  
+  }

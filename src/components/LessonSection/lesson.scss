@@ -1,0 +1,167 @@
+.lesson-section {
+ padding: 80px 130px 20px 220px;
+  opacity: 1;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.99) 10%, #EAE4FF 100%);
+  
+  .circle-icon {
+    position: relative;  
+    left: 300px;         
+    width: 50px;         
+    z-index: 2;         
+  }
+  
+  .square-icon {
+    position: relative;
+    top: 330px;          
+    right: -1000px;         
+    width: 100px;
+    z-index: 1;
+  }
+
+
+}
+
+.lesson-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+  
+}
+
+.lesson-image{
+  position: relative;
+}
+
+.lesson-image img{
+  position: relative;
+  z-index: 2;
+  width: 230px;
+  
+}
+.lesson-text {
+  max-width: 670px;
+
+  p {
+    font-family: Lato;
+    font-weight: 510;
+    font-size: 16px;
+    line-height: 27px;
+    letter-spacing: 0%;
+
+  }
+
+  .demo-btn {
+    background: #4440DB;
+    width: 179px;
+    margin-top: 20px;
+    height: 49px;
+    border-radius: 50px;
+    border: none;
+    color: white;
+    font-family: Lato;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 15px;
+    cursor: pointer;
+  
+    &:hover {
+      background: #5950ff;
+    }
+  }
+}
+
+.lesson-text h1 {
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
+  font-size: 16px;
+  line-height:20px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #26C485;
+}
+
+.lesson-text h2 {
+  font-family: Nunito;
+  font-size: 38px;
+  margin-bottom: 10px;
+}
+
+@media (max-width: 1024px) {
+
+  .lesson-section{
+
+    padding: 80px 60px;
+    text-align: center;
+    margin: 0;
+
+    .circle-icon{
+      left: -130px;
+      top: 30px;
+      width: 60px;
+    }
+
+    .square-icon{
+      right: -430px;
+      top: 350px;
+      width: 80px;
+    }
+
+  }
+}
+@media (max-width: 768px) {
+
+  .lesson-section{
+    padding: 60px 40px;
+  }
+
+  .lesson-container{
+    flex-direction: column;
+    text-align: center;
+    margin: 0;
+  }
+
+  .lesson-image img{
+    width: 100%;
+    max-width: 350px;
+  }
+
+  .lesson-text{
+    max-width: 100%;
+  }
+
+  .lesson-text h2{
+    font-size: 28px;
+  }
+
+  .circle-icon{
+    display: none;
+  }
+
+  .square-icon{
+    display: none;
+  }
+
+}
+@media (max-width: 480px) {
+
+  .lesson-section{
+    padding-top: 180px;
+    // padding: 40px 20px;
+  }
+
+  .lesson-text h2{
+    font-size: 24px;
+  }
+
+  .lesson-text p{
+    font-size: 14px;
+    line-height: 24px;
+  }
+
+  .demo-btn{
+    width: 160px;
+    height: 45px;
+  }
+
+}
