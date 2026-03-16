@@ -1,5 +1,5 @@
 import team from '../../assets/team.png'
-import vector2 from '../../assets/vector2.png'
+import Vector2 from '../../assets/Vector2.png'
 const CardUi02 = () => {
     return (
       <div className="card2">
@@ -23,7 +23,7 @@ const CardUi02 = () => {
             <h5>Nouman Khan</h5>
             <p>mohammadnouman524@gmail.com</p>
           </div>
-<img src={vector2} alt="" className='vector2' />
+<img src={Vector2} alt="" className='vector2' />
         </div>
        
       </div>
