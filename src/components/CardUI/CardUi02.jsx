@@ -21,7 +21,7 @@ const CardUi02 = () => {
   
           <div>
             <h5>Nouman Khan</h5>
-            <p>mohammadnouman524@gmail.com</p>
+            <p className='email'>mohammadnouman524@gmail.com</p>
           </div>
 <img src={Vector2} alt="" className='vector2' />
         </div>

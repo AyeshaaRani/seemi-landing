@@ -134,21 +134,17 @@
 
 @media (max-width: 768px) {
   .signup-form {
-    margin: 50px auto; /* center horizontally */
-    width: 90%;
-    height: auto;
-    padding: 30px;
-
+    width:auto;
     .form-fields {
-      grid-template-columns: 1fr; /* single column */
-    }
+      grid-template-columns: 1fr !important;  /* force single column */
 
-    button {
-      width: 100%;
+      input,
+      .password-field {
+        grid-column: 1 / -1; /* force full width for all fields */
+      }
     }
   }
 }
-
 @media (max-width: 480px) {
   .signup-form {
     margin: 30px auto;

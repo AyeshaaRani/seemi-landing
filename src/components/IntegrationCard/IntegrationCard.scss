@@ -60,7 +60,6 @@
   }
   .sparkle{
     position: relative;
-  
     top: 190px;
     left: 10px;
  
@@ -622,27 +621,99 @@ left: 300px;
     .feedback-card {
       width: 250px;
     }
-  
+  .email{
+    font-size: 12px;
+  }
   }
   
-  @media (max-width: 768px) {
-  
-    .integration-card {
-      padding: 25px 18px;
-    }
-  
-    .floating-card {
-      width: 240px;
-    }
-  
-    .member-card {
-      margin-left: 30px;
-    }
-    .rotate-3{
-      left: 200px;
-    }
-  
+  /* ==========================
+   Small Screen Centering Fix
+========================== */
+@media (max-width: 768px) {
+
+  /* Floating cards centered inside card */
+  .floating-card,
+  .rotate-1,
+  .rotate-2,
+  .rotate-3 {
+    left: 50% !important;
+    transform: translateX(-50%) rotate(0deg) !important; /* remove rotations if they break layout */
+    
   }
+
+  /* Team / Member / Feedback Cards centered */
+  .team-card,
+  .member-card,
+  .feedback-card {
+    left: 10% !important;
+    right: auto !important;
+   top: 60%;
+  }
+
+  /* Calendar badges centered */
+  .calendar-badges {
+    right: 30% !important;
+    left: auto !important;
+    transform: translateX(50%) rotate(0deg);
+  }
+
+  /* Seemii tag */
+  .seemii-tag {
+    top: 0%;
+    left: 70% !important;
+    transform: translateX(-50%) rotate(0deg);
+  }
+
+  /* Add tutor box */
+  .add-tutor {
+    left: 50% !important;
+    transform: translateX(-50%);
+  }
+ .email{
+  width: 70%;
+  span{
+    width: 20px;
+  }
+ }
+ .sparkle{
+  position: relative;
+  top: 190px;
+  left: 10px;
+
+    
+}
+.team{
+  position: absolute;
+top: 130px;
+right: 20px;
+}
+.vector1{
+ 
+left: 400px;
+
+
+}
+.vector2{
+  position: absolute;
+  right: 90px;
+  top: 150px;
+}
+.feedback{
+  position: relative;
+  top: 8px;
+}
+.arrow{
+
+  left:60px;
+ 
+}
+.arrow2{
+  position: absolute;
+  right: 175px;
+  top: -20px;
+}
+
+}
   
   @media (max-width: 480px) {
   
