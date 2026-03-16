@@ -1,6 +1,6 @@
 import sparkle from '../../assets/sparkle.png'
 import vector1 from '../../assets/Vector1.png'
-import vector2 from '../../assets/vector2.png'
+import vector2 from '../../assets/Vector2.png'
 const CardUi04 = () => {
     return (
       <div className="Card04">
